@@ -3,6 +3,7 @@
         <b-btn v-b-modal.modal1>Launch modal</b-btn>
 
         <b-modal id="modal1" title="Bootstrap-Vue" ref="myModalRef"
+                 class="my-modal"
                  :hide-footer="true"
                  :hide-header="true"
                  size="lg"
@@ -33,19 +34,19 @@ export default {
     color: #5a6277;
 }
 @media (max-width: 992px) {
-    .modal-dialog {
+    .my-modal .modal-dialog {
         max-width: 1000px;
         margin: 0;
     }
-    .modal-content{
+    .my-modal .modal-content{
         border: 0;
         border-radius: 0;
         background-color: #fbfbfb;
     }
-    .modal-body {
+    .my-modal .modal-body {
         padding: 0;
     }
-    .modal-dialog-centered {
+    .my-modal .modal-dialog-centered {
         align-items: inherit;
     }
 }
